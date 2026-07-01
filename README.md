@@ -24,3 +24,9 @@ Python based educational tool demonstrating cryptographic concepts through anima
 - Educational design
 - Cryptography
 - Report writing
+
+# Requirements
+Windows 11 system with Python installed.
+Tkinter library installed
+
+To run application, execute Main.py.
