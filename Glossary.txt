@@ -1,0 +1,25 @@
+CTR Encryption//A mode of operation which transforms block ciphers into stream ciphers. It works by incrementing a counter value (combined with a nonce) and encrypting that with the key to create keystreams. These keystreams are then XORed with the plaintext to produce ciphertext. For more information, see "CTR Encryption" lesson.**
+GCM Encryption//A mode of operation based upon CTR that provides both encryption and authentication. It encrypts in the same way as CTR, but also generates an authentication tag. For more information, see "GCM Encryption" lesson.**
+Nonce//A number used once in encryption to ensure the same plaintext does not produce the same ciphertext**
+Key//A secret vale used by an encryption algorithm to encrypt and decrypt data. Should be kept secret at all times**
+XOR//A logical operation often used in encryption algorithms. Compares two bits and outputs 1 if they are different and 0 if they are the same**
+Block Cipher//An encryption algorithm that encrypts data using fixed size blocks**
+Stream Cipher//An encryption method that processes data one bit at a time**
+Plaintext//Original readable message that sender wants to send**
+Ciphertext//Encrypted output of an encryption algorithm produced from the plaintext as well as other values such as a key or nonce**
+Initialisation Vector (IV)//Value used alongside a key to ensure that the same plaintext never produces the same ciphertext, which increases security**
+Authentication Tag//Value generated in GCM that is used to verify the integrity and authenticity of encrypted data**
+Integrity//If data has integrity then it has not been altered or tampered with in any way**
+Authentication//Process of verifying data comes from a trusted source**
+Confidentiality//Ensuring data is only accessible to those who the sender intended to see it**
+Replay Attack//Attack where attacker resends previously captured data to trick a system into accepting it**
+Keystream//A sequence of bits generated during encryption in stream ciphers, and some block ciphers, which is XORed with plaintext to produce ciphertext**
+Galois Field Multiplication//A special type of multiplication which is used in GCM mode to calculate the authentication tag**
+AES Encryption//AES (Advanced Encryption Standard) is a secure symmetric encryption algorithm**
+Block Size//The fixed amount of data that a block cipher will process at once, e.g. 128 bits for AES**
+Parallelisation/Parallelisable//The ability to perform multiple encryption (or decryption) operations at a single time. For example, CTR encryption allows this because each block is independent from the others**
+Verification//Process of checking that authentication tag is correct to confirm integrity and authenticity**
+Tampering//Unauthorised modification of data during transmission**
+Brute Force Attack//Attack where all possible keys are tried until the correct one is found, guaranteed to work given enough time, however modern encryption algorithms would take millions of years to brute force the correct key, even with the most powerful hardware. A system is considered secure against brute force attacks if the time to guess a key correctly is unfeasibly large**
+Known Plaintext Attack//Attack where attacker has access to plaintext and its corresponding ciphertext, and so tries to reverse engineer the algorithm**
+
